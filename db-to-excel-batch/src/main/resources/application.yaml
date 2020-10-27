@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  batch:
+    job:
+      enabled: false
+  h2:
+    console:
+      enabled: true
+  datasource:
+    initialize: true
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=- 1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+inputFile:
+  file:C:\Users\EKMBRSH\Desktop\Learning\Spring batch\spring-batch\src\main\resources\users.csv
